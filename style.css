@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+.container {
+
+    width: 414px;
+    height:980px;
+    background-color: #E5E5E5;
+}
+.top{
+    width:414px;
+    height:92px;
+    background-color:#CF2B2B;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 21px;
+    position:fixed;
+    left:0;
+    top:0;
+}
+.top h1{
+    width:248px;
+    height:44px;
+    font-size:44px;
+    font-weight:400px;
+    color:#FFFFFF;
+    font-family: righteous;
+}
+.top h2 {
+    width:226px;
+    height:17px;
+    font-size:18px;
+    font-weight:400px;
+    color:#FFFFFF;
+}
+
+.cardapio {
+    width:414px;
+    height:842;
+    padding-left: 19px;
+    padding-top:27px;
+    margin: 92px 0;
+
+    display:flex;
+    flex-direction: column;
+}
+
+.text {
+    width: 320px;
+    height: 25px;
+    font-size:26px;
+    font-weight:400px;
+    color:#333333;
+    font-family: righteous;
+}
+
+.opcoes {
+    width: 395px;
+    height: 216px;
+    display:flex;
+    margin-top:17px;
+    margin-bottom: 27px;
+    overflow-x: scroll;
+
+}
+::-webkit-scrollbar{
+    display:none;
+}
+.opcoes > div {
+    width: 172px;
+    height:216px;
+    background-color: #FFFFFF;
+    margin-right:16px;
+    border-radius: 9px;
+    padding:0 11px;
+}
+.item {
+    width:144px;
+    height: 185px;
+    font-family:roboto;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.item img{
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+}
+.nome-item {
+    width:139px;
+    height:23px;
+    font-weight:700px;
+    font-size: 16px;
+    color:#333333;
+
+}
+.descricao-item{
+    Width:147px;
+    Height:39px;
+    font-weight:300;
+    display:flex;
+    align-items: center;
+    color:#A6A6A6;
+
+}
+.preco-item{
+    width:66px;
+    height:19px;
+    font-weight:400px;
+    font-size:16px;
+    color:#000000;
+
+}
+
+
+.botao-inferior {
+    width:414px;
+    height:92px;
+    background-color: #FFFFFF;
+    position:fixed;
+    bottom: 0;
+    left:0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-inferior button {
+    width: 364px;
+    height: 61px;
+    background-color: #CBCBCB;
+    border: none;
+    border-radius: 50px;
+    font-family:roboto;
+    font-size:20px;
+    font-weight:400px;
+    text-align: center;
+    color:#FFFFFF;
+}
