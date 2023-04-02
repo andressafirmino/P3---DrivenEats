@@ -22,66 +22,75 @@
         </div>
         <div class="cardapio">
             <div class="text">Primeiro, seu prato</div>
-            <div class="opcoes">
-                <div class="item">
+            <div class="opcoes prato">
+                <div class="bacon item" onclick="selecionarPrato ('.bacon')">
                     <img src="https://assets.unileversolutions.com/recipes-v2/230410.jpg"/>
                     <div class="nome-item">X-bacon</div>
-                    <div class="descricao-item">S/ batata</div>
-                    <div class="preco-item">R$</div>
+                    <div class="descricao-item">Carne, queijo, alface, cebola, tomate, bacon e maionese</div>
+                    <div class="preco-item">R$ 32,99</div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item">
-                    <img src="https://assets.unileversolutions.com/recipes-v2/230410.jpg"/>
-                    <div class="nome-item">X-bacon</div>
-                    <div class="descricao-item">S/ batata</div>
-                    <div class="preco-item">R$</div>
+                <div class="salada item" onclick="selecionarPrato ('.salada')">
+                    <img src="https://assets.unileversolutions.com/recipes-v2/230412.jpg?imwidth=500"/>
+                    <div class="nome-item">X-salada</div>
+                    <div class="descricao-item">Carne, queijo, alface, tomate e maionese</div>
+                    <div class="preco-item">R$ 29,99</div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item">
-                    <img src="https://assets.unileversolutions.com/recipes-v2/230410.jpg"/>
-                    <div class="nome-item">X-bacon</div>
-                    <div class="descricao-item">S/ batata</div>
-                    <div class="preco-item">R$</div>
+                <div class="duplo item" onclick="selecionarPrato ('.duplo')">
+                    <img src="https://assets.unileversolutions.com/recipes-v2/230452.jpg"/>
+                    <div class="nome-item">X-duplo</div>
+                    <div class="descricao-item">Carne, queijo, pepino, cebola roxa e maionese</div>
+                    <div class="preco-item">R$ 34,99</div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
             <div class="text">Agora, sua bebida</div>
-            <div class="opcoes">
-                <div class="item">
-                    <img src="https://assets.unileversolutions.com/recipes-v2/230410.jpg"/>
-                    <div class="nome-item">X-bacon</div>
-                    <div class="descricao-item">S/ batata</div>
-                    <div class="preco-item">R$</div>
+            <div class="opcoes bebida">
+                <div class="coca item" onclick="selecionarBebida ('.coca')">
+                    <img src="https://www.bistek.com.br/media/catalog/product/cache/15b2f1f06e1cd470c80b1f3fd7ec8301/1/7/1793942.jpg"/>
+                    <div class="nome-item">Coca-Cola</div>
+                    <div class="descricao-item">310ml</div>
+                    <div class="preco-item">R$ 4,99</div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item">
-                    <img src="https://assets.unileversolutions.com/recipes-v2/230410.jpg"/>
-                    <div class="nome-item">X-bacon</div>
-                    <div class="descricao-item">S/ batata</div>
-                    <div class="preco-item">R$</div>
+                <div class="guarana item" onclick="selecionarBebida ('.guarana')">
+                    <img src="https://giassi.vtexassets.com/arquivos/ids/507250/Refrigerante-Guarana-Antarctica-Lata-310ml.png?v=637994816574830000"/>
+                    <div class="nome-item">Guaraná Antarctica</div>
+                    <div class="descricao-item">310ml</div>
+                    <div class="preco-item">R$ 4,49</div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item">
-                    <img src="https://assets.unileversolutions.com/recipes-v2/230410.jpg"/>
-                    <div class="nome-item">X-bacon</div>
-                    <div class="descricao-item">S/ batata</div>
-                    <div class="preco-item">R$</div>
+                <div class="tea item" onclick="selecionarBebida ('.tea')">
+                    <img src="https://tezeio.vtexassets.com/arquivos/ids/680665-800-800?v=638127403352100000&width=800&height=800&aspect=true"/>
+                    <div class="nome-item">Ice Tea - Pêssego</div>
+                    <div class="descricao-item">300ml</div>
+                    <div class="preco-item">R$ 4,19</div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
             <div class="text">Por fim, sua sobremesa</div>
-            <div class="opcoes">
-                <div class="item">
-                    <img src="https://assets.unileversolutions.com/recipes-v2/230410.jpg"/>
-                    <div class="nome-item">X-bacon</div>
-                    <div class="descricao-item">S/ batata</div>
-                    <div class="preco-item">R$</div>
+            <div class="opcoes sobremesa">
+                <div class="leite item" onclick="selecionarSobremesa ('.leite')">
+                    <img src="https://queijobom.com.br/image/cache/catalog/WhatsApp%20Image%202020-09-04%20at%2016.25.11%20(1)-600x600.jpeg"/>
+                    <div class="nome-item">Doce de leite - Diet</div>
+                    <div class="descricao-item">100g</div>
+                    <div class="preco-item">R$ 13,99</div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item">
-                    <img src="https://assets.unileversolutions.com/recipes-v2/230410.jpg"/>
-                    <div class="nome-item">X-bacon</div>
-                    <div class="descricao-item">S/ batata</div>
-                    <div class="preco-item">R$</div>
+                <div class="pudim item" onclick="selecionarSobremesa ('.pudim')">
+                    <img src="https://s3.amazonaws.com/produtos.vipcommerce.com.br/250x250/306f5554-64f3-44b5-9204-85a7ff04b06a.jpg"/>
+                    <div class="nome-item">Pudim de leite condensado</div>
+                    <div class="descricao-item">100g</div>
+                    <div class="preco-item">R$ 8,99</div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item">
-                    <img src="https://assets.unileversolutions.com/recipes-v2/230410.jpg"/>
-                    <div class="nome-item">X-bacon</div>
-                    <div class="descricao-item">S/ batata</div>
-                    <div class="preco-item">R$</div>
+                <div class="sorvete item" onclick="selecionarSobremesa ('.sorvete')">
+                    <img src="https://www.donaldscreamices.co.uk/image/cache/catalog/ice-cream-logo-s/100mlvanilla-800x800.png"/>
+                    <div class="nome-item">Sorvete - Baunilha</div>
+                    <div class="descricao-item">100ml</div>
+                    <div class="preco-item">R$ 16,99</div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
         </div>
@@ -92,5 +101,7 @@
             </button>
         </div>
     </div>
+    <script src="javascript.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>

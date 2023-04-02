@@ -3,12 +3,11 @@
 }
 .container {
 
-    width: 414px;
-    height:980px;
+    width: 100%;
     background-color: #E5E5E5;
 }
 .top{
-    width:414px;
+    width:100%;
     height:92px;
     background-color:#CF2B2B;
     display:flex;
@@ -18,6 +17,8 @@
     position:fixed;
     left:0;
     top:0;
+
+    z-index: 9;
 }
 .top h1{
     width:248px;
@@ -36,8 +37,7 @@
 }
 
 .cardapio {
-    width:414px;
-    height:842;
+    width:100%;
     padding-left: 19px;
     padding-top:27px;
     margin: 92px 0;
@@ -56,7 +56,6 @@
 }
 
 .opcoes {
-    width: 395px;
     height: 216px;
     display:flex;
     margin-top:17px;
@@ -67,24 +66,22 @@
 ::-webkit-scrollbar{
     display:none;
 }
-.opcoes > div {
+.item {
     width: 172px;
     height:216px;
+    font-family:roboto;
     background-color: #FFFFFF;
     margin-right:16px;
+    border: none;
     border-radius: 9px;
-    padding:0 11px;
-}
-.item {
-    width:144px;
-    height: 185px;
-    font-family:roboto;
+    padding:0 14px;
 
     display:flex;
     flex-direction: column;
     justify-content: space-around;
-    
-}
+
+    cursor: pointer;
+ }
 
 .item img{
     width: 144px;
@@ -114,12 +111,9 @@
     font-weight:400px;
     font-size:16px;
     color:#000000;
-
 }
-
-
 .botao-inferior {
-    width:414px;
+    width:100%;
     height:92px;
     background-color: #FFFFFF;
     position:fixed;
@@ -132,7 +126,7 @@
 }
 
 .botao-inferior button {
-    width: 364px;
+    width: 100%;
     height: 61px;
     background-color: #CBCBCB;
     border: none;
@@ -142,4 +136,28 @@
     font-weight:400px;
     text-align: center;
     color:#FFFFFF;
+}
+
+.selecionado {
+    width: 172px;
+    height:216px;
+    border: 4px solid #32B72F;
+    border-radius: 9px;
+    padding:0 11px;
+    
+    position:relative;
+}
+
+
+.selecionado ion-icon {
+    color: #32B72F;
+    opacity:1;
+    font-size: 15px;
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+}
+
+ion-icon {
+    opacity: 0;
 }
