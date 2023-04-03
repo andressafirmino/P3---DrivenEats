@@ -2,9 +2,6 @@ let nome_prato = '';
 let nome_bebida = '';
 let nome_sobremesa = '';
 
-let cliente = '';
-let endereco = '';
-
 let pratoSelecionado = '';
 let bebidaSelecionada = '';
 let sobremesaSelecionada = '';
@@ -109,12 +106,6 @@ function selecionarSobremesa (seletor) {
 }
 
 
-function infosEntrega () {
-    cliente = prompt('Qual o seu nome?');
-    endereco = prompt('Qual o seu endereço?');
-}
-
-
 function finalizar () {
     if (nome_prato !== ''){
         if (nome_bebida !== '') {
@@ -144,8 +135,7 @@ function mensagemWpp () {
    - Bebida:  ${nome_bebida}
    - Sobremesa:  ${nome_sobremesa}
    Total: R$ ${total}`;
-
-    alert(mensagem);                   
+                  
     window.open(`https://wa.me/55999999999?text=${encodeURIComponent(mensagem)}`);
                         
 }
