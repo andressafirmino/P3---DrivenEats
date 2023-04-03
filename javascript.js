@@ -130,7 +130,7 @@ function finalizar () {
 }
 
 
-function calcular(valor_prato, valor_bebida, valor_sobremesa) {
+function calcular() {
    
     total = (valor_pratoN) + (valor_bebidaN) + (valor_sobremesaN);
     total = total.toFixed(2);
@@ -139,10 +139,14 @@ function calcular(valor_prato, valor_bebida, valor_sobremesa) {
 
 
 function mensagemWpp () {
-   mensagem = `Olá, gostaria de fazer o pedido:\n- Prato: ${nome_prato}\n - Bebida:  ${nome_bebida}\n - Sobremesa:  ${nome_sobremesa}\n Total: R$ ${total}`;
+   mensagem = `Olá, gostaria de fazer o pedido:
+   - Prato: ${nome_prato}
+   - Bebida:  ${nome_bebida}
+   - Sobremesa:  ${nome_sobremesa}
+   Total: R$ ${total}`;
 
     alert(mensagem);                   
-    window.open("https://wa.me/55999999999?text=" + mensagem);
+    window.open(`https://wa.me/55999999999?text=${encodeURIComponent(mensagem)}`);
                         
 }
 
