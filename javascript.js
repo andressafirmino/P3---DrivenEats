@@ -13,6 +13,10 @@ let valor_prato = '';
 let valor_bebida = '';
 let valor_sobremesa = '';
 
+let valor_pratoN = 0;
+let valor_bebidaN = 0;
+let valor_sobremesaN = 0;
+
 
 let valor1 ='';
 let valor2 ='';
@@ -44,8 +48,8 @@ function selecionarPrato (seletor) {
     valor1 = document.querySelector('.prato .selecionado .preco-item');
     valor_prato = valor1.innerHTML;
 
-    valor_prato = parseFloat(valor_prato.replace("R$", "").replace(",", "."));
-    console.log(valor_prato);
+    valor_pratoN = parseFloat(valor_prato.replace("R$", "").replace(",", "."));
+    
 
     finalizar();
 
@@ -73,7 +77,7 @@ function selecionarBebida (seletor) {
     valor2 = document.querySelector('.bebida .selecionado .preco-item');
     valor_bebida = valor2.innerHTML;
 
-    valor_bebida = parseFloat(valor_bebida.replace("R$", "").replace(",", "."));
+    valor_bebidaN = parseFloat(valor_bebida.replace("R$", "").replace(",", "."));
 
     finalizar();
 
@@ -99,7 +103,7 @@ function selecionarSobremesa (seletor) {
     valor3 = document.querySelector('.sobremesa .selecionado .preco-item');
     valor_sobremesa = valor3.innerHTML;
 
-    valor_sobremesa = parseFloat(valor_sobremesa.replace("R$", "").replace(",", "."));
+    valor_sobremesaN = parseFloat(valor_sobremesa.replace("R$", "").replace(",", "."));
 
     finalizar();
 }
@@ -128,18 +132,16 @@ function finalizar () {
 
 function calcular(valor_prato, valor_bebida, valor_sobremesa) {
    
-    total = (valor_prato) + (valor_bebida) + (valor_sobremesa);
+    total = (valor_pratoN) + (valor_bebidaN) + (valor_sobremesaN);
+    total = total.toFixed(2);
+    total = total.replace(".", ",");
 }
 
 
 function mensagemWpp () {
-   mensagem = "Olá, gostaria de fazer o pedido: " + "\n" +
-                        "- Prato: " + nome_prato + "\n" +
-                        "- Bebida: " + nome_bebida + "\n" +
-                        "- Sobremesa: " + nome_sobremesa + "\n" +
-                        "Total: R$" + total;
+   mensagem = `Olá, gostaria de fazer o pedido:\n- Prato: + ${nome_prato}\n - Bebida:  + ${nome_bebida}\n - Sobremesa:  + ${nome_sobremesa}\n + Total: R$ + ${total}`;
 
-     alert(mensagem);                   
+                       
     window.open("https://wa.me/55999999999?text=" + mensagem);
                         
 }
